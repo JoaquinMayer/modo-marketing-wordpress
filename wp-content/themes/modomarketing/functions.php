@@ -593,3 +593,35 @@ function twentytwentyone_add_ie_class()
 <?php
 }
 add_action('wp_footer', 'twentytwentyone_add_ie_class');
+
+
+add_action('show_user_profile', 'extra_user_profile_fields');
+add_action('edit_user_profile', 'extra_user_profile_fields');
+
+function extra_user_profile_fields($user)
+{ ?>
+	<h3><?php _e("Author Information", "blank"); ?></h3>
+
+	<table class="form-table">
+		<tr>
+			<th><label for="author"><?php _e("Author Information"); ?></label></th>
+			<td>
+				<textarea name="author" id="author" rows="5" cols="10"><?php echo esc_attr(get_the_author_meta('author', $user->ID)); ?></textarea><br />
+				<span class="description"><?php _e("Please enter Author's Information."); ?></span>
+			</td>
+		</tr>
+	</table>
+<?php }
+
+add_action('personal_options_update', 'save_extra_user_profile_fields');
+add_action('edit_user_profile_update', 'save_extra_user_profile_fields');
+
+function save_extra_user_profile_fields($user_id)
+{
+
+	if (!current_user_can('edit_user', $user_id)) {
+		return false;
+	}
+
+	update_user_meta($user_id, 'author', $_POST['author']);
+}
