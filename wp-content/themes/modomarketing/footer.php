@@ -28,7 +28,7 @@
 					</div>
 					<div class="card-body d-flex justify-content-between">
 						<div class="">
-							<img src="<?php echo esc_url(get_template_directory_uri()) . '/assests/images/cover-podcast.jpg' ?>" alt="" srcset="" />
+							<img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/images/cover-podcast.jpg' ?>" alt="" srcset="" />
 						</div>
 						<div class="ms-2">
 							<h3 class="card-text mm-title-podcast">
@@ -42,7 +42,7 @@
                       justify-content-start
                       pe-3
                       bg-green
-                    "><img src="<?php echo esc_url(get_template_directory_uri()) . './img/spotify-icon.png' ?>" alt="" class="me-2" />
+                    "><img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/images/spotify-icon.png' ?>" alt="" class="me-2" />
 								Escuchar Ahora</a>
 						</div>
 					</div>
