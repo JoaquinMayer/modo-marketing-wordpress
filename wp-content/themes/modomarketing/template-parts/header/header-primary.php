@@ -16,10 +16,10 @@
           position-relative
           mm-h-800
         ">
-        <img src="./img/raquel-diego.png" srcset="./img/raquel-diego.png 1x, ./img/raquel-diego@2x.png 2x" alt="raquel y diego" class="img-fluid d-lg-none" />
-        <img src="./img/raquel-diego-desktop.png" srcset="
-            ./img/raquel-diego-desktop.png    1x,
-            ./img/raquel-diego-desktop@2x.png 2x
+        <img src="/assets/images/raquel-diego.png" srcset="/assets/images/raquel-diego.png 1x, /assets/images/raquel-diego@2x.png 2x" alt="raquel y diego" class="img-fluid d-lg-none" />
+        <img src="/assets/images/raquel-diego-desktop.png" srcset="
+            /assets/images/raquel-diego-desktop.png    1x,
+            /assets/images/raquel-diego-desktop@2x.png 2x
           " alt="raquel y diego" class="img-fluid d-none d-lg-block mm-raquel-diego" />
         <div class="
             mm-card-player
@@ -33,7 +33,7 @@
                 Escuchar <br />
                 Podcast ahora
             </p>
-            <img src="./img/icon-play.png" class="mm-icon-play" srcset="./img/icon-play.png 1x, ./img/icon-play@2x.png 2x" alt="icono de play" />
+            <img src="/assets/images/icon-play.png" class="mm-icon-play" srcset="/assets/images/icon-play.png 1x, /assets/images/icon-play@2x.png 2x" alt="icono de play" />
         </div>
         <div id="mm-nav" class="
             bottom-0
@@ -57,7 +57,7 @@
                     </div>
                     <div class="card-body d-flex justify-content-between">
                         <div class="">
-                            <img src="./img/cover-podcast.jpg" alt="" srcset="" />
+                            <img src="<?php esc_url(get_template_directory_uri()) . '/assets/images/cover-podcast.jpg' ?>" alt="" srcset="" />
                         </div>
                         <div class="ms-2">
                             <h3 class="card-text mm-title-podcast">
@@ -71,7 +71,7 @@
                       justify-content-start
                       pe-3
                       bg-green
-                    "><img src="./img/spotify-icon.png" alt="" class="me-2" />
+                    "><img src="/assets/images/spotify-icon.png" alt="" class="me-2" />
                                 Escuchar Ahora</a>
                         </div>
                     </div>
