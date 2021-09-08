@@ -1,21 +1,4 @@
-@charset "UTF-8";
-
-/*
-Theme Name: Modo Marketing
-Theme URI: https://github.com/JoaquinMayer/modo-marketing-wordpress
-Author: Joaquin Mayer
-Author URI: https://joaquinmayer.com/
-Description: Twenty Twenty-One is a blank canvas for your ideas and it makes the block editor your best brush. With new block patterns, which allow you to create a beautiful layout in a matter of seconds, this theme’s soft colors and eye-catching — yet timeless — design will let your work shine. Take it for a spin! See how Twenty Twenty-One elevates your portfolio, business website, or personal blog.
-Requires at least: 5.3
-Tested up to: 5.8
-Requires PHP: 5.6
-Version: 1.4
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: modomarketing
-Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready
-
-*/
+@import "01-settings/file-header";
 
 /**
  * SETTINGS
@@ -92,3 +75,48 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
  * Editor Font Sizes....Editor Font Sizes.
  * Measure..............The width of a line of text, in characters.
  */
+// Print................Print styles
+
+/* Categories 01 to 03 are the basics. */
+@import "01-settings/fonts";
+@import "01-settings/global";
+
+@import "02-tools/mixins";
+@import "02-tools/functions";
+
+@import "03-generic/normalize";
+@import "03-generic/breakpoints";
+@import "03-generic/vertical-margins";
+@import "03-generic/reset";
+@import "03-generic/clearings";
+
+/* Category 04 can contain any default HTML element. Do not add classes here, just give the elements some basic styles. */
+@import "04-elements/blockquote";
+@import "04-elements/forms";
+@import "04-elements/media";
+@import "04-elements/misc";
+@import "04-elements/links";
+
+/* Category 05 is all about adjusting the default block styles to the given layout. I only added three blocks as examples. */
+@import "05-blocks/blocks";
+
+/* Category 06 contains all "bigger" components which contain elements of the previous two categories like header, footer, page template, single template, comments section, archives, ... */
+@import "06-components/header";
+@import "06-components/footer";
+@import "06-components/single";
+@import "06-components/posts-and-pages";
+@import "06-components/entry";
+@import "06-components/archives";
+@import "06-components/404";
+@import "06-components/search";
+@import "06-components/comments";
+@import "06-components/navigation";
+@import "06-components/footer-navigation";
+@import "06-components/pagination";
+@import "06-components/widgets";
+
+/* Category 07 is for any utility classes that are not assigned to a specific component. */
+@import "07-utilities/a11y";
+@import "07-utilities/color-palette";
+@import "07-utilities/measure";
+@import "07-utilities/ie";
