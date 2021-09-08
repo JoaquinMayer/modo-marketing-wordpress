@@ -91,7 +91,7 @@
                   ">Inicio</a>
                     </li>
                     <li class="col">
-                        <a href="/episodios.html" class="
+                        <a href="/episodios" class="
                     text-center text-uppercase
                     w-100
                     d-block
@@ -99,7 +99,7 @@
                   ">Episodios</a>
                     </li>
                     <li class="col">
-                        <a href="/materiales.html" class="
+                        <a href="/materiales" class="
                     text-center text-uppercase
                     w-100
                     d-block
@@ -107,7 +107,7 @@
                   ">Materiales</a>
                     </li>
                     <li class="col">
-                        <a href="/articulos.html" class="
+                        <a href="/articulos" class="
                     text-center text-uppercase
                     w-100
                     d-block
