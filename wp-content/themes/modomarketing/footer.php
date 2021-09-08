@@ -70,13 +70,13 @@
 				<a class="mm-item-menu-link" href="<?php echo esc_url(home_url('/')); ?>">Inicio</a>
 			</li>
 			<li class="mm-item-menu">
-				<a class="mm-item-menu-link" href="/episodios.html">Episodios</a>
+				<a class="mm-item-menu-link" href="/episodios">Episodios</a>
 			</li>
 			<li class="mm-item-menu">
-				<a class="mm-item-menu-link" href="/materiales.html">Materiales</a>
+				<a class="mm-item-menu-link" href="/materiales">Materiales</a>
 			</li>
 			<li class="mm-item-menu">
-				<a class="mm-item-menu-link" href="/articulos.html">Artículos</a>
+				<a class="mm-item-menu-link" href="/articulos">Artículos</a>
 			</li>
 			<li>
 				<div class="
