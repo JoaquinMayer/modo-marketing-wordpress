@@ -15,7 +15,13 @@
  * @since Modo Marketing 1.0
  */
 
-get_header(); ?>
+if (is_front_page()) :
+	get_header('front');
+else :
+	get_header();
+endif;
+
+?>
 
 <?php if (is_home() && !is_front_page() && !empty(single_post_title('', false))) : ?>
 	<header class="page-header alignwide">
