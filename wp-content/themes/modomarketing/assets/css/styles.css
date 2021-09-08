@@ -1,0 +1,340 @@
+* {
+  font-family: SFProDisplay-Medium;
+}
+body {
+  background-color: #f3f3f3;
+}
+/* ALL */
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #60606066 !important;
+}
+
+/* BOOSTRAP OVERRIDE */
+.text-primary {
+  color: #485d95 !important;
+}
+
+.text-secondary {
+  color: #d8d8d8 !important;
+}
+
+.bg-light {
+  background-color: #f6f6f6 !important;
+}
+
+.btn-secondary {
+  background-color: #d7dbe0 !important;
+}
+
+.bg-danger {
+  background-color: #c24e45 !important;
+}
+
+/* CUSTOM */
+.mm-header {
+  background-image: url("./img/bg-header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 992px) {
+  .mm-header {
+    background-image: url("./img/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.mm-button-menu {
+  background-color: #fff;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.mm-button-menu:focus {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.mm-card-player {
+  background-color: #fff;
+  margin-bottom: 35px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 12px 18px;
+}
+
+.mm-icon-play {
+  filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.2));
+}
+
+.mm-mobile-menu {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mm-options-menu {
+  background-color: #fff;
+  width: 80%;
+  height: 100%;
+  padding: 18px;
+}
+
+.mm-item-menu {
+  padding: 12px 0;
+}
+
+.mm-item-menu-link {
+  text-decoration: none;
+  font-size: 2em;
+  color: #485d95;
+  font-family: SFProDisplay-Heavy;
+}
+
+.mm-header-2 {
+  font-size: 4em;
+  font-family: SFProDisplay-Heavy;
+}
+
+.mm-background-form {
+  background-image: url("./img/bg-form.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .mm-background-form {
+    background-image: url("./img/bg-form-desktop.png");
+  }
+}
+
+.mm-text-1 {
+  color: #273d5f;
+  font-size: 1.5em;
+  font-family: SFProDisplay-Medium;
+}
+
+.mm-header-1 {
+  font-size: 2.5em;
+  font-family: SFProDisplay-Heavy;
+}
+
+.mm-btn-submit {
+  font-size: 1.6em;
+  color: #606060;
+  font-family: SFProDisplay-Heavy;
+}
+
+.mm-header-3 {
+  font-size: 4em;
+  color: #273d5f;
+  font-family: SFProDisplay-Heavy;
+}
+
+.mm-header-4 {
+  font-size: 3em;
+  color: #d8d8d8;
+  font-family: SFProDisplay-Heavy;
+}
+
+.mm-text-2 {
+  font-size: 1.5em;
+}
+
+.mm-image-diego {
+  transform: translateY(35px);
+}
+
+@media (min-width: 768px) {
+  .mm-image-raquel {
+    position: absolute;
+    right: -50px;
+    bottom: -41px;
+    transform: translateY(-41px);
+  }
+  .mm-image-diego {
+    position: absolute;
+    right: 0;
+    bottom: -70px;
+    transform: translateY(-7px);
+  }
+}
+
+@media (min-width: 992px) {
+  .mm-image-ebook {
+    top: -20px;
+    left: 35px;
+    transform: scale(1.5);
+    height: 185px;
+  }
+
+  .mm-form-content {
+    width: 65% !important;
+  }
+  .mm-btn-submit-ebook {
+    width: 35% !important;
+  }
+
+  .mm-background-conoce {
+    background-image: url("./img/background-conocenos.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.mm-btn-submit-ebook,
+.mm-btn-submit-post {
+  background: linear-gradient(
+    to right,
+    #d16e45 0%,
+    #c24238 11%,
+    #ba3537 23%,
+    #b03a53 37%,
+    #825099 59%,
+    #685497 69%,
+    #405795 88%,
+    #213a5f 100%
+  ) !important;
+  font-family: SFProDisplay-Semibold;
+  font-size: 1.5em;
+  border-radius: 8px;
+}
+
+.mm-badge-ebook {
+  font-family: SFProDisplay-Bold;
+}
+.mm-header-ebook {
+  font-size: 2em;
+  font-family: SFProDisplay-Bold;
+  color: #2f2f2f;
+}
+
+.mm-text-ebook {
+  font-size: 1.5em;
+  font-family: SFProDisplay-Light;
+  color: #606060;
+}
+
+.mm-btn-see-more {
+  border-radius: 8px;
+  background: #845799;
+  color: white;
+  font-size: 1.5em;
+}
+
+.mm-btn-see-more:hover {
+  color: white;
+}
+
+.mm-header-post {
+  font-family: SFProDisplay-Heavy;
+  font-size: 1.5em;
+  color: #273d5f;
+}
+
+.mm-text-post {
+  font-family: SFProDisplay-Medium;
+  font-size: 1em;
+  color: #273d5f;
+}
+
+.mm-btn-submit-post {
+  font-family: SFProDisplay-Bold;
+  font-size: 1em;
+  color: #fff;
+}
+
+.mm-footer-title,
+.mm-footer-text {
+  font-family: SFProDisplay-Medium;
+  font-weight: normal;
+  font-size: 1.5em;
+  text-align: left;
+  color: rgba(215, 219, 224, 0.5);
+}
+
+.mm-footer {
+  background: linear-gradient(#485d95 0%, #273d5f 100%);
+}
+
+/* FONTS */
+.mm-font-display-bold {
+  font-family: SFProDisplay-Bold;
+  font-weight: bold;
+}
+
+.mm-button-menu-desktop.active {
+  background: linear-gradient(
+    to right,
+    #d16e45 0%,
+    #c24238 11%,
+    #ba3537 23%,
+    #b03a53 37%,
+    #825099 59%,
+    #685497 69%,
+    #405795 88%,
+    #213a5f 100%
+  ) !important;
+  color: white;
+  font-family: SFProDisplay-Bold;
+}
+.mm-button-menu-desktop {
+  color: #606060;
+  text-decoration: none;
+  font-size: 2em;
+  font-family: SFProDisplay-Medium;
+  border-radius: 8px;
+}
+
+.mm-button-menu-desktop:hover {
+  color: #606060;
+}
+
+.mm-button-menu-desktop.active:hover {
+  color: white;
+}
+
+.mm-menu {
+  border-radius: 8px;
+}
+
+.mm-header-lg-1 {
+  font-family: SFProDisplay-Heavy;
+  color: #2f2f2f;
+}
+
+.bg-green {
+  background-color: #1ed760;
+  border: 0;
+  color: white;
+}
+.bg-green:hover {
+  color: white;
+}
+
+.mm-title-podcast {
+  color: #606060;
+  font-family: SFProDisplay-Bold;
+  font-size: 1.5em;
+}
+
+.mm-card-podcast {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.mm-link-podcast {
+  color: #845799;
+  text-decoration: none;
+}
+.mm-link-podcast:hover {
+  color: #845799;
+  text-decoration: none;
+}
+
+.mm-raquel-diego {
+  max-height: 70vh;
+}

@@ -1,0 +1,57 @@
+#mm-nav {
+  z-index: 5;
+}
+
+.mm-btn-submit-post-hero {
+  border-radius: 8px;
+  font-family: SFProDisplay-Semibold;
+  font-weight: normal;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.mm-share-post {
+  font-family: SFProDisplay-Semibold;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  color: #606060;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+.mm-post-image-container {
+  overflow: hidden;
+  height: auto;
+}
+
+.mm-post-image-caption {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  background: linear-gradient(to top, #000, rgba(0, 0, 0, 0));
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.mm-post-image-caption h3 {
+  font-family: SFProDisplay-Heavy;
+  font-weight: normal;
+  font-size: 34px;
+  text-align: left;
+  color: #fff;
+}
+
+.mm-post-image-caption p {
+  font-family: SFProDisplay-Medium;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: left;
+  color: #fff;
+}
