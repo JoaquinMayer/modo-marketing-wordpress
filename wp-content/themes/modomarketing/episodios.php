@@ -23,6 +23,8 @@ get_header(); ?>
     </header><!-- .page-header -->
 <?php endif; ?>
 
+<h1>Hola es aca</h1>
+
 <?php
 if (have_posts()) {
 
