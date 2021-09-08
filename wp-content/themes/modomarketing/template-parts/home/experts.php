@@ -20,10 +20,7 @@ $diego_info = get_userdata(3);
                                 <?php echo $raquel_info->first_name ?> <br class="d-none d-md-block" /><?php echo $raquel_info->last_name ?>
                             </h4>
                             <p class="mm-text-2">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Voluptatum voluptatem at voluptatibus quos tempore eaque
-                                illum saepe. Explicabo sequi quod quae tempora ut fugit
-                                sapiente, commodi, nemo quisquam quasi debitis!
+                                <?php echo $raquel_info->description ?>
                             </p>
                         </div>
                         <div class="row col col-12 col-md-4">
@@ -59,11 +56,7 @@ $diego_info = get_userdata(3);
                                 <?php echo $diego_info->first_name ?> <br class="d-none d-md-block" /><?php echo $diego_info->last_name ?>
                             </h4>
                             <p class="mm-text-2">
-                                Creo estrategias de Marketing para start-ups tecnológicas.
-                                Mi trabajo consiste en alinear los trabajos de
-                                construcción de marca, implementación técnica y desarrollo
-                                de producto. De esa forma, es posible construir
-                                estrategias que aporten valor y sean rentables.
+                                <?php echo $diego_info->description ?>
                             </p>
                         </div>
                         <div class="row col col-12 col-md-4">
