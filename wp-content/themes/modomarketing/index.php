@@ -25,6 +25,7 @@ endif;
 <?php
 get_template_part('template-parts/home/contact');
 get_template_part('template-parts/home/experts');
+get_template_part('template-parts/home/materiales');
 
 get_footer();
 ?>
