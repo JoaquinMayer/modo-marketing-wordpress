@@ -2,7 +2,7 @@
     <nav class="navbar navbar-light">
         <div class="container-fluid p-lg-0">
             <button class="navbar-toggler mm-button-menu d-lg-none" id="mm-open-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/images/menu-icon.png' ?>" alt="logo modo marketing" srcset="<?php echo esc_url(get_template_directory_uri()) . '/assets/images/menu-icon.png' ?> 1x, <?php echo esc_url(get_template_directory_uri()) . '/assets/images/menu-icon@x2.png' ?> 2x" class="d-inline-block align-text-top" />
+                <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/images/menu-icon.png' ?>" alt="logo modo marketing" srcset="<?php echo esc_url(get_template_directory_uri()) . '/assets/images/menu-icon.png' ?> 1x, <?php echo esc_url(get_template_directory_uri()) . '/assets/images/menu-icon@2x.png' ?> 2x" class="d-inline-block align-text-top" />
             </button>
             <a class="navbar-brand m-0 p-0" href="<?php echo esc_url(home_url('/')); ?>">
                 <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/images/logo.png' ?>" width="160" alt="logo modo marketing" srcset="<?php echo esc_url(get_template_directory_uri()) . '/assets/images/logo.png' ?> 1x, <?php echo esc_url(get_template_directory_uri()) . '/assets/images/logo@2x.png' ?> 2x" class="d-inline-block align-text-top img-fluid" />
