@@ -17,55 +17,48 @@
 </div><!-- #primary -->
 </div><!-- #content -->
 
-<?php get_template_part('template-parts/footer/footer-widgets'); ?>
-
-<footer id="colophon" class="site-footer" role="contentinfo">
-
-	<?php if (has_nav_menu('footer')) : ?>
-		<nav aria-label="<?php esc_attr_e('Secondary menu', 'twentytwentyone'); ?>" class="footer-navigation">
-			<ul class="footer-navigation-wrapper">
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'footer',
-						'items_wrap'     => '%3$s',
-						'container'      => false,
-						'depth'          => 1,
-						'link_before'    => '<span>',
-						'link_after'     => '</span>',
-						'fallback_cb'    => false,
-					)
-				);
-				?>
-			</ul><!-- .footer-navigation-wrapper -->
-		</nav><!-- .footer-navigation -->
-	<?php endif; ?>
-	<div class="site-info">
-		<div class="site-name">
-			<?php if (has_custom_logo()) : ?>
-				<div class="site-logo"><?php the_custom_logo(); ?></div>
-			<?php else : ?>
-				<?php if (get_bloginfo('name') && get_theme_mod('display_title_and_tagline', true)) : ?>
-					<?php if (is_front_page() && !is_paged()) : ?>
-						<?php bloginfo('name'); ?>
-					<?php else : ?>
-						<a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-					<?php endif; ?>
-				<?php endif; ?>
-			<?php endif; ?>
-		</div><!-- .site-name -->
-		<div class="powered-by">
-			<?php
-			printf(
-				/* translators: %s: WordPress. */
-				esc_html__('Proudly powered by %s.', 'twentytwentyone'),
-				'<a href="' . esc_url(__('https://wordpress.org/', 'twentytwentyone')) . '">WordPress</a>'
-			);
-			?>
-		</div><!-- .powered-by -->
-
-	</div><!-- .site-info -->
-</footer><!-- #colophon -->
+<footer class="container-fluid mm-footer p-4">
+	<div class="container-lg">
+		<div class="row">
+			<div class="col">
+				<div class="card mm-card-podcast">
+					<div class="card-header d-flex justify-content-between bg-white">
+						<p class="m-0">PODCAST // ÚLTIMO EPISODIO</p>
+						<a href="" class="mm-link-podcast">Ver todos los episodios</a>
+					</div>
+					<div class="card-body d-flex justify-content-between">
+						<div class="">
+							<img src="<?php echo esc_url(get_template_directory_uri()) . '/assests/images/cover-podcast.jpg' ?>" alt="" srcset="" />
+						</div>
+						<div class="ms-2">
+							<h3 class="card-text mm-title-podcast">
+								El marketing ya no es lo que era ⎢ MODO MARKETING Ep. 1
+							</h3>
+							<a href="#" class="
+                      btn
+                      rounded-pill
+                      d-inline-flex
+                      align-items-center
+                      justify-content-start
+                      pe-3
+                      bg-green
+                    "><img src="<?php echo esc_url(get_template_directory_uri()) . './img/spotify-icon.png' ?>" alt="" class="me-2" />
+								Escuchar Ahora</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<h5 class="mm-footer-title">MODO MARKETING</h5>
+				<p class="mm-footer-text">
+					Buscamos inspirar a nuestra audiencia con ideas e insigths
+					revolucionarios para que puedan aplicarlos en sus negocios o
+					emprendimientos.
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
 
 </div><!-- #page -->
 
