@@ -399,10 +399,10 @@ add_action('after_setup_theme', 'Modo_Marketing_content_width', 0);
  */
 function Modo_Marketing_scripts()
 {
-	wp_enqueue_style('boostrap-icons-style', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css');
-	wp_enqueue_style('boostrap-style', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css');
+	wp_enqueue_style('bootstrap-icons-style', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css');
+	wp_enqueue_style('bootstrap-style', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css');
 
-	wp_enqueue_script('boostrap-script', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js');
+	wp_enqueue_script('bootstrap-script', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js');
 
 	wp_enqueue_style('modo-marketing-fonts', get_template_directory_uri() . '/assets/css/fonts.css');
 	wp_enqueue_style('modo-marketing-style', get_template_directory_uri() . '/assets/css/styles.css');
