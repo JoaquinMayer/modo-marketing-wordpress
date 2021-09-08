@@ -57,7 +57,7 @@
                     </div>
                     <div class="card-body d-flex justify-content-between">
                         <div class="">
-                            <img src="<?php esc_url(get_template_directory_uri()) . '/assets/images/cover-podcast.jpg' ?>" alt="" srcset="" />
+                            <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/images/cover-podcast.jpg' ?>" alt="" srcset="" />
                         </div>
                         <div class="ms-2">
                             <h3 class="card-text mm-title-podcast">
