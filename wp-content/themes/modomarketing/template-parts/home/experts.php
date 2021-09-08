@@ -1,3 +1,7 @@
+<?php $raquel_info = get_userdata(2);
+$raquel_first_name = $raquel_info->first_name;
+$raquel_last_name = $raquel_info->last_name;
+?>
 <section class="mm-background-conoce pb-lg-5 mb-lg-5">
     <div class="container-md">
         <section class="row">
@@ -13,7 +17,7 @@
                     <div class="card-body pb-0 row">
                         <div class="col col-12 col-md-8 p-md-4">
                             <h4 class="mm-header-4">
-                                Raquel <br class="d-none d-md-block" />Oberlander
+                                <?php echo $raquel_first_name ?> <br class="d-none d-md-block" /><?php echo $raquel_last_name ?>
                             </h4>
                             <p class="mm-text-2">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
