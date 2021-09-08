@@ -1,6 +1,6 @@
-<?php $raquel_info = get_userdata(2);
-$raquel_first_name = $raquel_info->first_name;
-$raquel_last_name = $raquel_info->last_name;
+<?php
+$raquel_info = get_userdata(2);
+$diego_info = get_userdata(3);
 ?>
 <section class="mm-background-conoce pb-lg-5 mb-lg-5">
     <div class="container-md">
@@ -17,7 +17,7 @@ $raquel_last_name = $raquel_info->last_name;
                     <div class="card-body pb-0 row">
                         <div class="col col-12 col-md-8 p-md-4">
                             <h4 class="mm-header-4">
-                                <?php echo $raquel_first_name ?> <br class="d-none d-md-block" /><?php echo $raquel_last_name ?>
+                                <?php echo $raquel_info->first_name ?> <br class="d-none d-md-block" /><?php echo $raquel_info->last_name ?>
                             </h4>
                             <p class="mm-text-2">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -28,10 +28,12 @@ $raquel_last_name = $raquel_info->last_name;
                         </div>
                         <div class="row col col-12 col-md-4">
                             <div class="col col-6 col-md-4 col-lg-4">
-                                <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/images/linkedin-logo.png' ?>" srcset="
+                                <a href="<?php echo $raquel_info->user_url ?>" target="_blank" rel="noopener noreferrer">
+                                    <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/images/linkedin-logo.png' ?>" srcset="
                                 <?php echo esc_url(get_template_directory_uri()) . '/assets/images/linkedin-logo.png' ?>    1x,
                                 <?php echo esc_url(get_template_directory_uri()) . '/assets/images/linkedin-logo@2x.png' ?> 2x
-                        " alt="linkedin logo" class="img-fluid" />
+                                " alt="linkedin logo" class="img-fluid" />
+                                </a>
                             </div>
                             <div class="col col-6 col-md-8 col-lg-8 position-relative">
                                 <picture>
@@ -54,7 +56,7 @@ $raquel_last_name = $raquel_info->last_name;
                     <div class="card-body pb-0 row">
                         <div class="col col-12 col-md-8 p-md-4">
                             <h4 class="mm-header-4">
-                                Diego <br class="d-none d-md-block" />Levinsky
+                                <?php echo $diego_info->first_name ?> <br class="d-none d-md-block" /><?php echo $diego_info->last_name ?>
                             </h4>
                             <p class="mm-text-2">
                                 Creo estrategias de Marketing para start-ups tecnológicas.
@@ -66,10 +68,12 @@ $raquel_last_name = $raquel_info->last_name;
                         </div>
                         <div class="row col col-12 col-md-4">
                             <div class="col col-6 col-md-4 col-lg-4">
-                                <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/images/linkedin-logo.png' ?>" srcset="
+                                <a href="<?php echo $diego_info->user_url ?>" target="_blank" rel="noopener noreferrer">
+                                    <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/images/linkedin-logo.png' ?>" srcset="
                                 <?php echo esc_url(get_template_directory_uri()) . '/assets/images/linkedin-logo.png' ?>    1x,
                                 <?php echo esc_url(get_template_directory_uri()) . '/assets/images/linkedin-logo@2x.png' ?> 2x
-                        " alt="linkedin logo" class="img-fluid" />
+                                " alt="linkedin logo" class="img-fluid" />
+                                </a>
                             </div>
                             <div class="col col-6 col-md-8 col-lg-8 position-relative">
                                 <picture>
