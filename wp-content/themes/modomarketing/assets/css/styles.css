@@ -33,14 +33,14 @@ body {
 
 /* CUSTOM */
 .mm-header {
-  background-image: url("./img/bg-header.png");
+  background-image: url("../images/bg-header.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 @media screen and (min-width: 992px) {
   .mm-header {
-    background-image: url("./img/bg-header-desktop.png");
+    background-image: url("../images/bg-header-desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -101,14 +101,14 @@ body {
 }
 
 .mm-background-form {
-  background-image: url("./img/bg-form.png");
+  background-image: url("../images/bg-form.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 @media (min-width: 768px) {
   .mm-background-form {
-    background-image: url("./img/bg-form-desktop.png");
+    background-image: url("../images/bg-form-desktop.png");
   }
 }
 
@@ -180,7 +180,7 @@ body {
   }
 
   .mm-background-conoce {
-    background-image: url("./img/background-conocenos.png");
+    background-image: url("../images/background-conocenos.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
