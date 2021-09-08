@@ -60,6 +60,43 @@
 	</div>
 </footer>
 
+<div class="mm-mobile-menu position-fixed" id="mm-mobile-menu" style="display: none">
+	<div class="mm-options-menu">
+		<ul class="list-unstyled">
+			<li class="mm-item-menu">
+				<img id="mm-close-menu" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/images/icon-close.png' ?>" srcset="<?php echo esc_url(get_template_directory_uri()) . '/assets/images/icon-close.png' ?> 1x, <?php echo esc_url(get_template_directory_uri()) . '/assets/images/icon-close@2x.png' ?> 2x" alt="icono de cerrar" />
+			</li>
+			<li class="mm-item-menu">
+				<a class="mm-item-menu-link" href="<?php echo esc_url(home_url('/')); ?>">Inicio</a>
+			</li>
+			<li class="mm-item-menu">
+				<a class="mm-item-menu-link" href="/episodios.html">Episodios</a>
+			</li>
+			<li class="mm-item-menu">
+				<a class="mm-item-menu-link" href="/materiales.html">Materiales</a>
+			</li>
+			<li class="mm-item-menu">
+				<a class="mm-item-menu-link" href="/articulos.html">Artículos</a>
+			</li>
+			<li>
+				<div class="
+                mm-card-player
+                d-flex
+                align-items-center
+                justify-content-between
+                mt-3
+              ">
+					<p class="mb-0 pe-4 mm-font-display-bold">
+						Escuchar <br />
+						Podcast ahora
+					</p>
+					<img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/images/icon-play.png' ?>" class="mm-icon-play" srcset="<?php echo esc_url(get_template_directory_uri()) . '/assets/images/icon-play.png' ?> 1x, <?php echo esc_url(get_template_directory_uri()) . '/assets/images/icon-play@2x.png' ?> 2x" alt="icono de play" />
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
