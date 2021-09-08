@@ -1,29 +1,31 @@
 <?php
+
 /**
  * Block Styles
  *
  * @link https://developer.wordpress.org/reference/functions/register_block_style/
  *
  * @package WordPress
- * @subpackage Twenty_Twenty_One
- * @since Twenty Twenty-One 1.0
+ * @subpackage Modo_Marketing
+ * @since Modo Marketing 1.0
  */
 
-if ( function_exists( 'register_block_style' ) ) {
+if (function_exists('register_block_style')) {
 	/**
 	 * Register block styles.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since Modo Marketing 1.0
 	 *
 	 * @return void
 	 */
-	function twenty_twenty_one_register_block_styles() {
+	function Modo_Marketing_register_block_styles()
+	{
 		// Columns: Overlap.
 		register_block_style(
 			'core/columns',
 			array(
 				'name'  => 'twentytwentyone-columns-overlap',
-				'label' => esc_html__( 'Overlap', 'twentytwentyone' ),
+				'label' => esc_html__('Overlap', 'twentytwentyone'),
 			)
 		);
 
@@ -32,7 +34,7 @@ if ( function_exists( 'register_block_style' ) ) {
 			'core/cover',
 			array(
 				'name'  => 'twentytwentyone-border',
-				'label' => esc_html__( 'Borders', 'twentytwentyone' ),
+				'label' => esc_html__('Borders', 'twentytwentyone'),
 			)
 		);
 
@@ -41,7 +43,7 @@ if ( function_exists( 'register_block_style' ) ) {
 			'core/group',
 			array(
 				'name'  => 'twentytwentyone-border',
-				'label' => esc_html__( 'Borders', 'twentytwentyone' ),
+				'label' => esc_html__('Borders', 'twentytwentyone'),
 			)
 		);
 
@@ -50,7 +52,7 @@ if ( function_exists( 'register_block_style' ) ) {
 			'core/image',
 			array(
 				'name'  => 'twentytwentyone-border',
-				'label' => esc_html__( 'Borders', 'twentytwentyone' ),
+				'label' => esc_html__('Borders', 'twentytwentyone'),
 			)
 		);
 
@@ -59,7 +61,7 @@ if ( function_exists( 'register_block_style' ) ) {
 			'core/image',
 			array(
 				'name'  => 'twentytwentyone-image-frame',
-				'label' => esc_html__( 'Frame', 'twentytwentyone' ),
+				'label' => esc_html__('Frame', 'twentytwentyone'),
 			)
 		);
 
@@ -68,7 +70,7 @@ if ( function_exists( 'register_block_style' ) ) {
 			'core/latest-posts',
 			array(
 				'name'  => 'twentytwentyone-latest-posts-dividers',
-				'label' => esc_html__( 'Dividers', 'twentytwentyone' ),
+				'label' => esc_html__('Dividers', 'twentytwentyone'),
 			)
 		);
 
@@ -77,7 +79,7 @@ if ( function_exists( 'register_block_style' ) ) {
 			'core/latest-posts',
 			array(
 				'name'  => 'twentytwentyone-latest-posts-borders',
-				'label' => esc_html__( 'Borders', 'twentytwentyone' ),
+				'label' => esc_html__('Borders', 'twentytwentyone'),
 			)
 		);
 
@@ -86,7 +88,7 @@ if ( function_exists( 'register_block_style' ) ) {
 			'core/media-text',
 			array(
 				'name'  => 'twentytwentyone-border',
-				'label' => esc_html__( 'Borders', 'twentytwentyone' ),
+				'label' => esc_html__('Borders', 'twentytwentyone'),
 			)
 		);
 
@@ -95,7 +97,7 @@ if ( function_exists( 'register_block_style' ) ) {
 			'core/separator',
 			array(
 				'name'  => 'twentytwentyone-separator-thick',
-				'label' => esc_html__( 'Thick', 'twentytwentyone' ),
+				'label' => esc_html__('Thick', 'twentytwentyone'),
 			)
 		);
 
@@ -104,9 +106,9 @@ if ( function_exists( 'register_block_style' ) ) {
 			'core/social-links',
 			array(
 				'name'  => 'twentytwentyone-social-icons-color',
-				'label' => esc_html__( 'Dark gray', 'twentytwentyone' ),
+				'label' => esc_html__('Dark gray', 'twentytwentyone'),
 			)
 		);
 	}
-	add_action( 'init', 'twenty_twenty_one_register_block_styles' );
+	add_action('init', 'Modo_Marketing_register_block_styles');
 }

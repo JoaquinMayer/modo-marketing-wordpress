@@ -1,10 +1,11 @@
 <?php
+
 /**
  * SVG Icons class
  *
  * @package WordPress
- * @subpackage Twenty_Twenty_One
- * @since Twenty Twenty-One 1.0
+ * @subpackage Modo_Marketing
+ * @since Modo Marketing 1.0
  */
 
 /**
@@ -17,14 +18,15 @@
  * All icons are assumed to have equal width and height, hence the option
  * to only specify a `$size` parameter in the svg methods.
  *
- * @since Twenty Twenty-One 1.0
+ * @since Modo Marketing 1.0
  */
-class Twenty_Twenty_One_SVG_Icons {
+class Modo_Marketing_SVG_Icons
+{
 
 	/**
 	 * User Interface icons – svg sources.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since Modo Marketing 1.0
 	 *
 	 * @var array
 	 */
@@ -40,7 +42,7 @@ class Twenty_Twenty_One_SVG_Icons {
 	/**
 	 * Social Icons – svg sources.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since Modo Marketing 1.0
 	 *
 	 * @var array
 	 */
@@ -91,7 +93,7 @@ class Twenty_Twenty_One_SVG_Icons {
 	 * By default, each Icon ID is matched against a .com TLD. To override this behavior,
 	 * specify all the domains it covers (including the .com TLD too, if applicable).
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since Modo Marketing 1.0
 	 *
 	 * @var array
 	 */
@@ -144,40 +146,41 @@ class Twenty_Twenty_One_SVG_Icons {
 	 *
 	 * @static
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since Modo Marketing 1.0
 	 *
 	 * @param string $group The icon group.
 	 * @param string $icon  The icon.
 	 * @param int    $size  The icon-size in pixels.
 	 * @return string
 	 */
-	public static function get_svg( $group, $icon, $size ) {
+	public static function get_svg($group, $icon, $size)
+	{
 
-		if ( 'ui' === $group ) {
+		if ('ui' === $group) {
 			$arr = self::$icons;
-		} elseif ( 'social' === $group ) {
+		} elseif ('social' === $group) {
 			$arr = self::$social_icons;
 		} else {
 			$arr = array();
 		}
 
 		/**
-		 * Filters Twenty Twenty-Ones's array of icons.
+		 * Filters Modo Marketings's array of icons.
 		 *
 		 * The dynamic portion of the hook name, `$group`, refers to
 		 * the name of the group of icons, either "ui" or "social".
 		 *
-		 * @since Twenty Twenty-One 1.0
+		 * @since Modo Marketing 1.0
 		 *
 		 * @param array $arr Array of icons.
 		 */
-		$arr = apply_filters( "twenty_twenty_one_svg_icons_{$group}", $arr );
+		$arr = apply_filters("Modo_Marketing_svg_icons_{$group}", $arr);
 
 		$svg = '';
-		if ( array_key_exists( $icon, $arr ) ) {
-			$repl = sprintf( '<svg class="svg-icon" width="%d" height="%d" aria-hidden="true" role="img" focusable="false" ', $size, $size );
+		if (array_key_exists($icon, $arr)) {
+			$repl = sprintf('<svg class="svg-icon" width="%d" height="%d" aria-hidden="true" role="img" focusable="false" ', $size, $size);
 
-			$svg = preg_replace( '/^<svg /', $repl, trim( $arr[ $icon ] ) ); // Add extra attributes to SVG code.
+			$svg = preg_replace('/^<svg /', $repl, trim($arr[$icon])); // Add extra attributes to SVG code.
 		}
 
 		// @phpstan-ignore-next-line.
@@ -189,53 +192,53 @@ class Twenty_Twenty_One_SVG_Icons {
 	 *
 	 * @static
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since Modo Marketing 1.0
 	 *
 	 * @param string $uri  Social link.
 	 * @param int    $size The icon-size in pixels.
 	 * @return string|null
 	 */
-	public static function get_social_link_svg( $uri, $size ) {
+	public static function get_social_link_svg($uri, $size)
+	{
 		static $regex_map; // Only compute regex map once, for performance.
 
-		if ( ! isset( $regex_map ) ) {
+		if (!isset($regex_map)) {
 			$regex_map = array();
 
 			/**
-			 * Filters Twenty Twenty-Ones's array of domain mappings for social icons.
+			 * Filters Modo Marketings's array of domain mappings for social icons.
 			 *
 			 * By default, each Icon ID is matched against a .com TLD. To override this behavior,
 			 * specify all the domains it covers (including the .com TLD too, if applicable).
 			 *
-			 * @since Twenty Twenty-One 1.0
+			 * @since Modo Marketing 1.0
 			 *
 			 * @param array $social_icons_map Array of default social icons.
 			 */
-			$map = apply_filters( 'twenty_twenty_one_social_icons_map', self::$social_icons_map );
+			$map = apply_filters('Modo_Marketing_social_icons_map', self::$social_icons_map);
 
 			/**
-			 * Filters Twenty Twenty-One's array of social icons.
+			 * Filters Modo Marketing's array of social icons.
 			 *
-			 * @since Twenty Twenty-One 1.0
+			 * @since Modo Marketing 1.0
 			 *
 			 * @param array $social_icons Array of default social icons.
 			 */
-			$social_icons = apply_filters( 'twenty_twenty_one_svg_icons_social', self::$social_icons );
+			$social_icons = apply_filters('Modo_Marketing_svg_icons_social', self::$social_icons);
 
-			foreach ( array_keys( $social_icons ) as $icon ) {
-				$domains            = array_key_exists( $icon, $map ) ? $map[ $icon ] : array( sprintf( '%s.com', $icon ) );
-				$domains            = array_map( 'trim', $domains ); // Remove leading/trailing spaces, to prevent regex from failing to match.
-				$domains            = array_map( 'preg_quote', $domains );
-				$regex_map[ $icon ] = sprintf( '/(%s)/i', implode( '|', $domains ) );
+			foreach (array_keys($social_icons) as $icon) {
+				$domains            = array_key_exists($icon, $map) ? $map[$icon] : array(sprintf('%s.com', $icon));
+				$domains            = array_map('trim', $domains); // Remove leading/trailing spaces, to prevent regex from failing to match.
+				$domains            = array_map('preg_quote', $domains);
+				$regex_map[$icon] = sprintf('/(%s)/i', implode('|', $domains));
 			}
 		}
-		foreach ( $regex_map as $icon => $regex ) {
-			if ( preg_match( $regex, $uri ) ) {
+		foreach ($regex_map as $icon => $regex) {
+			if (preg_match($regex, $uri)) {
 
-				return self::get_svg( 'social', $icon, $size ) . '<span class="screen-reader-text">';
+				return self::get_svg('social', $icon, $size) . '<span class="screen-reader-text">';
 			}
 		}
 		return null;
 	}
-
 }

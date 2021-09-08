@@ -1,24 +1,26 @@
 <?php
+
 /**
  * Customize API: WP_Customize_Color_Control class
  *
  * @package WordPress
- * @subpackage Twenty_Twenty_One
- * @since Twenty Twenty-One 1.0
+ * @subpackage Modo_Marketing
+ * @since Modo Marketing 1.0
  */
 
 /**
  * Customize Color Control class.
  *
- * @since Twenty Twenty-One 1.0
+ * @since Modo Marketing 1.0
  *
  * @see WP_Customize_Control
  */
-class Twenty_Twenty_One_Customize_Color_Control extends WP_Customize_Color_Control {
+class Modo_Marketing_Customize_Color_Control extends WP_Customize_Color_Control
+{
 	/**
 	 * The control type.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since Modo Marketing 1.0
 	 *
 	 * @var string
 	 */
@@ -27,7 +29,7 @@ class Twenty_Twenty_One_Customize_Color_Control extends WP_Customize_Color_Contr
 	/**
 	 * Colorpicker palette
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since Modo Marketing 1.0
 	 *
 	 * @var array
 	 */
@@ -36,19 +38,20 @@ class Twenty_Twenty_One_Customize_Color_Control extends WP_Customize_Color_Contr
 	/**
 	 * Enqueue control related scripts/styles.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since Modo Marketing 1.0
 	 *
 	 * @return void
 	 */
-	public function enqueue() {
+	public function enqueue()
+	{
 		parent::enqueue();
 
 		// Enqueue the script.
 		wp_enqueue_script(
 			'twentytwentyone-control-color',
-			get_theme_file_uri( 'assets/js/palette-colorpicker.js' ),
-			array( 'customize-controls', 'jquery', 'customize-base', 'wp-color-picker' ),
-			wp_get_theme()->get( 'Version' ),
+			get_theme_file_uri('assets/js/palette-colorpicker.js'),
+			array('customize-controls', 'jquery', 'customize-base', 'wp-color-picker'),
+			wp_get_theme()->get('Version'),
 			false
 		);
 	}
@@ -56,13 +59,14 @@ class Twenty_Twenty_One_Customize_Color_Control extends WP_Customize_Color_Contr
 	/**
 	 * Refresh the parameters passed to the JavaScript via JSON.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since Modo Marketing 1.0
 	 *
 	 * @uses WP_Customize_Control::to_json()
 	 *
 	 * @return void
 	 */
-	public function to_json() {
+	public function to_json()
+	{
 		parent::to_json();
 		$this->json['palette'] = $this->palette;
 	}
