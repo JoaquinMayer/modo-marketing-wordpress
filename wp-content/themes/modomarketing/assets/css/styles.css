@@ -338,3 +338,17 @@ body {
 .mm-raquel-diego {
   max-height: 70vh;
 }
+
+#wpcf7-f13-o1 p {
+	display: flex;
+}
+#wpcf7-f13-o1 .wpcf7-email {
+	height: 100%;
+}
+#wpcf7-f13-o1 .ajax-loader {
+	display: none;
+}
+
+#wpcf7-f13-o1 .wpcf7-form-control-wrap {
+	width: 100%
+}

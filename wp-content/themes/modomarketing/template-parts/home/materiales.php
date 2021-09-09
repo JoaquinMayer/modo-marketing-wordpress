@@ -37,21 +37,7 @@
                                     <?php echo get_the_title(); ?>
                                 </h4>
                                 <p class="mm-text-ebook">Por <?php the_author(); ?></p>
-                                <?php echo do_shortcode('[contact-form-7 id="13" title="Materiales" html_class="d-lg-flex"]'); ?>
-                                <form class="d-lg-flex">
-                                    <input type="email" name="name" class="form-control bg-light mm-form-content mb-3 mb-lg-0" placeholder="Escribe aquí tu email" />
-                                    <button type="submit" class="
-                        mm-btn-submit-ebook
-                        btn btn-dark
-                        px-5
-                        m-auto
-                        d-block
-                        text-uppercase
-                        border-0
-                      ">
-                                        ¡Lo quiero!
-                                    </button>
-                                </form>
+                                <?php echo do_shortcode('[contact-form-7 id="13" title="Materiales"]'); ?>
                             </div>
                         </div>
                     </div>
